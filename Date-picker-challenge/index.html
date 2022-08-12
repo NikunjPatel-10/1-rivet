@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date-picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class=" d-flex flex-direction-column  justify-center  box">
+            <div class=" selector ">
+                <span>Select country:</span>
+                <select id="mySelect" class="selectors" onchange="getDate()">
+                    <option value="" selected disabled>Select Time Zone</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA </option>
+                    <option value="aus">AUSTRALIA</option>
+                </select>
+            </div>
+            <div class="standardtime">
+                <p id="date"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+       setInterval( function getDate() {
+
+            var select = document.getElementById('mySelect');
+            var option = select.options[select.selectedIndex];
+
+            var output = option.value;
+
+
+            var x = new Date();
+            //    var h = currentdate.getHours();
+            //    var m = currentdate.getMinutes();
+            //    var s = currentdate.getSeconds();
+            // setInterval(() => console.log(new Date().toLocaleTimeString()), 1000);
+
+            let a = x.toLocaleString("en-US", { timeZone: "Asia/kolkata" });
+            let b = x.toLocaleString("en-US", { timeZone: "America/Chicago" });
+            let c = x.toLocaleString("en-US", { timeZone: "Australia/sydney" });
+            // var a = currentdate.getDay();
+            // var b = currentdate.getMonth();
+            // var c = currentdate.getFullYear();
+            // var d = currentdate.getHours();
+            // var e = currentdate.getMinutes();
+            // var f = currentdate.getMilliseconds();
+            // document.getElementById("date").innerHTML = a + "/" + b + "/" + c + d +":" + e +":" + f
+
+            // document.getElementById("date").innerHTML = a + "<br>" + b + "<br>" + c;
+
+            if (output == 'india') {
+                document.getElementById("date").innerHTML = a;
+            }
+            else if (output == 'usa') {
+                document.getElementById("date").innerHTML = b;
+            }
+            else if (output == 'aus') {
+                document.getElementById("date").innerHTML = c
+            }
+            // else{
+            //     alert("please select the value")
+            // }
+
+
+        },1000);
+        // setInterval(getDate,1000);
+
+    </script>
+</body>
+
+</html>
