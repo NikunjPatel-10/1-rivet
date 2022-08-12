@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+
+<body>
+    <div class="main-wrapper d-flex direction-column h-100">
+        <!-- header section start -->
+        <header class="wrapper2 d-flex align-item justify-content-between">
+            <div class="d-flex align-item ">
+                <div class=" d-flex menubar">
+                    <label for="toggleSidebar"><span class="fa-solid fa-bars icon cursor-pointer"></span></label>
+                    <!-- class="toggle-button cursor-pointer" -->
+                    <!-- <a href=""><span  ></span></a> -->
+                </div>
+                <div class="search-bar-wrapper ">
+                    <label for="search" class="fa-solid fa-magnifying-glass icon cursor-pointer"></label>
+                    <input type="text" id="search" placeholder="Search here" class="icon">
+                    <button class=" btn btn-primary ">Search</button>
+                </div>
+            </div>
+            <div class=" right-side-header d-flex align-item">
+                <a href="" class="message"><span class="fa-solid fa-comment-dots icon"></span></a>
+                <a href="" class="message"><span class="fa-solid fa-bell icon"></span></a>
+                <a href="" class="dropdown d-flex align-items-center">
+                    <div class="profile-wrap">
+                        <img src="assests/Images/profile pic.avif" alt="profile.pic">
+                    </div>
+                    <span class="fa-solid fa-caret-down icon "></span>
+                </a>
+
+            </div>
+        </header>
+        <!-- header section end -->
+
+        <section class="d-flex  flex-grow">
+            <!-- sidebar section  start-->
+
+            <input type="checkbox" id="toggleSidebar" />
+            <aside id="sidebar" class=" sidebar-wrapper  h-100 d-flex">
+                <div class=" d-flex flex-column sidebar align-item h-100">
+                    <div class=" d-flex flex-column align-item side-top ">
+                        <ul class="">
+                            <li>
+                                <a href=""><span class="fa-solid fa-table-columns icon"></span></a>
+                            </li>
+                            <li>
+                                <a href=""><span class="fa-solid fa-cart-shopping icon"></span></a>
+                            </li>
+                            <li>
+                                <a href=""> <span class="fa-solid fa-file-lines icon"></span></a>
+                            </li>
+                            <li>
+                                <a href=""><span class="fa-solid fa-gear icon"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="side-bottom">
+                        <ul class="">
+                            <li> <a href=""><span class="fa-solid fa-circle-exclamation icon"></span></a>
+                            </li>
+                            <li> <a href=""><span class="fa-solid fa-arrow-right-from-bracket icon"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+
+            <!-- sidebar section  end-->
+
+            <!-- main section start -->
+            <!-- second try -->
+            <main id="main" class="flex-grow color overflow-auto  ">
+                <h1>Dashboard</h1>
+                <div class="d-flex card-row flex-grow">
+                    <div class="card-wrapper">
+                        <div class="cards">
+                            <div class="main-items item-1">
+                                <a href="" class=""><span class="fa-regular fa-eye icon white"></span></a>
+                            </div>
+                            <h3>Total veiws</h3>
+                            <h2>308.402</h2>
+                            <h4>Start from 1 Jan 2021</h4>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="cards">
+                            <div class="main-items item-2">
+                                <a href=""> <span class="fa-solid fa-bag-shopping icon green"></span></a>
+                            </div>
+                            <h3>Total Products</h3>
+                            <h2>10.820</h2>
+                            <h4>+ Add New Products</h4>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="cards">
+                            <div class="main-items item-3">
+                                <a href=""><span class="fa-solid fa-user-group icon blue"></span></a>
+                            </div>
+                            <h3>Total Users</h3>
+                            <h2>8.425</h2>
+                            <h4>New User noted every week</h4>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="cards">
+                            <div class="main-items item-2">
+                                <a href=""><span class="fa-solid fa-cart-shopping icon light-green"></span></a>
+                            </div>
+                            <h3>Total Sells</h3>
+                            <h2>1.028.623</h2>
+                            <h4>Start from 1 Jan 2021</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <section style="display:flex; ">
+
+                    <!-- table start -->
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <th>No</th>
+                                <th>Product Name</th>
+                                <th>Status</th>
+                                <th>Sold</th>
+                                <th>Veiw</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between product-width">
+                                            <div>
+                                                1
+                                            </div>
+                                            <div class="product-img-wrap">
+                                                <img src="assests/Images/profile pic.avif" alt="profile.pic">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+
+                                        lorem lorem lorem lorem
+
+                                    </td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between product-width">
+                                            <div>
+                                                2
+                                            </div>
+                                            <div class="product-img-wrap">
+                                                <img src="assests/Images/profile pic.avif" alt="profile.pic">
+                                            </div>
+                                    </td>
+                                    <td>lorem lorem lorem lorem</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between product-width">
+                                            <div>
+                                                3
+                                            </div>
+                                            <div class="product-img-wrap">
+                                                <img src="assests/Images/profile pic.avif" alt="profile.pic">
+                                            </div>
+                                    </td>
+                                    <td>lorem lorem lorem lorem</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between product-width">
+                                            <div>
+                                                4
+                                            </div>
+                                            <div class="product-img-wrap">
+                                                <img src="assests/Images/profile pic.avif" alt="profile.pic">
+                                            </div>
+                                    </td>
+                                    <td>lorem lorem lorem lorem</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-between product-width">
+                                            <div>
+                                                5
+                                            </div>
+                                            <div class="product-img-wrap">
+                                                <img src="assests/Images/profile pic.avif" alt="profile.pic">
+                                            </div>
+                                    </td>
+                                    <td>lorem lorem lorem lorem</td>
+                                    <td>Active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="chart">
+                        <img src="assests/Images/graph.png" alt="graph.img">
+                    </div>
+
+                </section>
+            </main>
+
+            <!-- main section end -->
+        </section>
+
+    </div>
+
+
+
+</body>
+
+</html>

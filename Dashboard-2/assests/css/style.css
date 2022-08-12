@@ -1,0 +1,456 @@
+/* Universal selector */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+.text-primary {
+    color: #4492fa;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* global selector */
+.d-flex {
+    display: flex;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.align-item {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 30px;
+    color: grey;
+}
+
+.h-100 {
+    height: 100%;
+
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+/* .flex-column {
+    flex-direction: column;
+} */
+
+.icon:hover {
+    color: #4492fa;
+}
+
+.bg-primary {
+    background-color: blue;
+}
+
+/* header-section */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper2 {
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.menubar {
+    margin-left: 20px;
+}
+
+.search-bar-wrapper {
+    margin-left: 70px;
+    background-color: #f5f7f9;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-wrapper #search {
+    all: unset;
+    padding: 0 20px;
+    color: #abb1be;
+    width: 240px;
+}
+
+.search-bar-wrapper ::placeholder {
+    color: #abb1be;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.btn {
+    all: unset;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #4492fa;
+    color: white;
+}
+
+.right-side-header {
+    margin-right: 30px;
+}
+
+.right-side-header .message {
+    position: relative;
+    padding: 6px;
+    margin-left: 32px;
+}
+
+.right-side-header .message::after {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    content: '';
+    height: 10px;
+    width: 10px;
+    background: red;
+    border-radius: 50%;
+}
+
+.right-side-header .dropdown {
+    margin-left: 32px;
+}
+
+.dropdown .profile-wrap {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+
+#toggleSidebar {
+    display: none;
+}
+
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.sidebar-wrapper .sidebar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    border-right: 1px solid #ebebeb;
+}
+
+/* list-styling */
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-top li {
+    list-style: none;
+    margin: 20px;
+}
+
+.side-bottom {
+    margin-bottom: 50px;
+}
+
+.side-bottom li {
+    list-style: none;
+    margin: 20px;
+}
+
+/* .sidebar{
+    transition: all 0.2s ease-in-out;
+    transform: translateX(0);
+
+} */
+#sidebar {
+    transition: all 0.1s linear;
+}
+
+#toggleSidebar:checked+#sidebar {
+    width: 0;
+    transform: translateX(-300px);
+    transition: 0.5s ease-in-out;
+    /* display: none; */
+}
+
+/* Main section css */
+
+main {
+    padding: 15px 15px;
+}
+
+.color {
+    background-color: #f5f7f9;
+}
+
+/* .row {
+    margin: -16px;
+} */
+
+.content-wrapper {
+    transition: 0.5s ease-in-out;
+}
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+
+
+    /* width: 100%; */
+}
+
+h1 {
+    padding: 15px;
+    margin-left: -15px;
+}
+
+.card-wrapper {
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.cards {
+    padding: 16px;
+    background-color: #fff;
+}
+
+.cards:hover {
+    background-color: #4492fa;
+    transition: .5s ease-in-out;
+}
+
+.cards .icon:hover {
+    color: white;
+}
+
+.cards h2 {
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #abb1be;
+}
+
+
+.cards .main-items {
+    height: 60px;
+    width: 60px;
+    margin: 10px 10px;
+    padding: 12px 12px;
+
+}
+
+.cards .item-1 {
+    background-color: hsl(214deg 94% 66%);
+}
+
+.cards .item-3 {
+    background-color: hsl(215deg 89% 96%);
+}
+
+.cards .item-2 {
+    background-color: hsl(180deg 38% 97%);
+}
+
+.main-items .green {
+    color: green;
+}
+
+.main-items .blue {
+    color: blue;
+}
+
+.main-items .white {
+    color: white;
+}
+
+.main-items .light-green {
+    color: rgb(15, 79, 15);
+}
+
+
+
+
+.main h4 {
+    margin: 30px 10px;
+}
+
+
+.table-wrapper {
+    width: 60%;
+}
+
+.chart {
+
+    /* background-color: #fff; */
+    /* margin-left:37px;
+    margin-bottom: 30px; */
+    padding-left: 20px;
+    padding-right: 17px;
+    /* height: 500px; */
+    width: 40%;
+    flex-grow: 1;
+    /* padding-bottom: 20px;
+     */
+}
+
+table {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border: none;
+    border-spacing: 0px 15px;
+
+}
+
+th,
+td {
+    margin: 20px;
+    padding: 20px;
+    /* border: 1px solid black; */
+}
+
+td {
+    background-color: #abb1be;
+    text-align: left;
+}
+
+th {
+    text-align: left;
+
+}
+
+.product-width {
+    width: 70px;
+}
+
+.product-img-wrap {
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.product-img-wrap img {
+    height: auto;
+    max-width: 100%;
+}
+
+.chart {}
+
+.chart img {
+    max-width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+
+}
+
+
+/* .card-wrapper {
+    flex-wrap: wrap;
+} */
+
+/* media query for responsiveness */
+@media only screen and (max-width: 1200px) {
+
+    .card-wrapper {
+        width: 33.33%;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+
+    .card-wrapper {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* body {
+      background-color: red;
+    } */
+    .card-wrapper {
+
+        width: 100%;
+    }
+
+    .sidebar-wrapper {
+        position: relative;
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 1000;
+        background-color: white;
+    }
+}
