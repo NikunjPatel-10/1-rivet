@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object method</title>
+</head>
+
+<body>
+    <script>
+        // Object methods
+        const a = {
+            firstname: "Nikunj",
+            lastname: "Patel",
+            age: 50,
+        };
+        console.log(a);
+
+        // Create method
+
+        const b = Object.create(a);
+        b.firstname = "nevil";
+        console.log(b)
+
+        // freeze method
+        Object.freeze(a);
+        a.firstname = "parth";
+        console.log(a.firstname);
+
+        // Seal method
+        const xyz = {
+            firstname: "hardik",
+            std: "12"
+        }
+        Object.seal(xyz);
+        xyz.std = "10"
+        console.log(xyz);
+
+
+        // assign method  
+
+        const person1 = { x: 1, y: 2, z: 3 };
+        const person2 = { a: 6, b: 7, z: 4 };
+        const person3 = Object.assign(person1, person2);
+
+        console.log(person3);
+
+        // entries method:this method return an array of a given object of a key value pair.
+
+        const object1 = {
+            a: 'somestring',
+            b: 42,
+            c: "nikunj patel"
+        };
+
+        const object2 = Object.entries(object1);
+        console.log(object2);
+
+
+        // hasOwn() method : this return the true or false value,if the property exist in the object then it shows true value, otherwise return false
+        const n = {
+            No: "1",
+            name: "vatsal"
+        }
+
+        const m = Object.hasOwn(n, 'No');
+        console.log(m);
+
+        //  keys method
+
+        const object3 = {
+            a: 'somestring',
+            b: 42,
+            c: false
+        };
+        console.log(Object.keys(object3));
+
+        // values method
+
+        const A = {
+            name: "Nikunj",
+            no: "1",
+        }
+        console.log(Object.values(A));
+
+        // stringify method
+
+        const k = {
+            name: 'dhruv',
+            std: 'juniorkg'
+        }
+
+        const l = (JSON.stringify(k))
+        console.log(l);
+        console.log(JSON.parse(l));
+        
+        // parse method
+
+        const json = '{"result":true, "count":42}';
+        console.log(JSON.parse(json))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
