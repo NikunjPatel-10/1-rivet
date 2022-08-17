@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table using DOM</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-center align-center">
+        <div class="contain-wrapper d-flex direction-column ">
+            <div class="content-wrapper">
+                <input type="text" placeholder="Search here" id="search-box" onkeyup="filterUser()">
+                <input type="button" value="search" onclick="filterUser()"><br>
+                <div class="open-pop-up d-flex justify-center ">
+                    <button class="add-user" onclick="openModal()">Add User</button>
+                </div>
+            </div>
+           
+            <div class="d-table">
+               
+                <table id="user-table">
+                    <thead>
+                        <th>FirstName</th>
+                        <th>E-mail</th>
+                        <th>Mobile No</th>
+                        <th>City</th>
+                    </thead>
+                    <tbody id="user-table-body">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="no-records d-none">No records found</div>
+            <!-- <div class=" d-flex justify-center ">
+                <button class="add-user" onclick="openModal()">Add User</button>
+            </div> -->
+            <!-- <main Modal --> 
+            <div class="modal d-none">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="openModal()">&times;</span>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati qui voluptas incidunt reiciendis deserunt impedit voluptates quisquam ex neque, aliquam fuga a eum accusamus ullam reprehenderit alias asperiores animi enim.
+                        Reprehenderit sint quas neque consequuntur. Nesciunt veniam quis, fugit dolore non, esse vitae dicta iusto doloribus sed laborum dolor similique cumque aut unde illum doloremque repellendus assumenda earum ipsam autem!
+                        Perspiciatis impedit accusamus quos? Labore, distinctio! Hic nisi omnis rerum, fugit temporibus unde aperiam nihil nobis natus animi architecto ea perspiciatis. Alias officiis culpa vitae quibusdam, cupiditate dolor itaque incidunt?</div>
+                    </div>
+               
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="assests/js/script.js"></script>
+</body>
+
+</html>
