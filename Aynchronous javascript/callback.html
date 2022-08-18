@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call-back </title>
+</head>
+
+<body>
+    <h1>Student List</h1>
+    <ul id="student">
+
+    </ul>
+    <script>
+        console.log("Welcome to callback");
+
+        const students = [
+            {
+                name: "hiren",
+                subject: "javaScript",
+            },
+            {
+                name: "pratik",
+                subject: "html",
+            },
+        ];
+
+        function enrollStudent(student) {
+            setTimeout(function () {
+                // students.push(student);
+                console.log('student enrolled');
+                getStudents();
+            }, 3000);
+        }
+
+        function getStudents() {
+            setTimeout(function () {
+                let str = "";
+                students.forEach(function (student) {
+                    str += `<li>${student.name}</li>`;
+                });
+
+                document.getElementById("student").innerHTML = str;
+                console.log('student fetched');
+            }, 1000);
+        }
+        let newStudent = { name: "jigar", subject: "Frontend" }
+           
+        enrollStudent(student, getStudents);
+    </script>
+</body>
+
+</html>
