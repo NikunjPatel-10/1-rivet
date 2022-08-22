@@ -1,0 +1,314 @@
+/* universal selector */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.overflow-auto{
+    overflow: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.jusify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.icons {
+    font-size: 30px;
+    color: grey;
+}
+
+.h-100 {
+    height: 100%;
+
+}
+
+.w-100 {
+    width: 100%;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* .overflow-auto {
+    overflow: auto;
+}
+
+.flex-grow {
+    flex-grow: 1;
+} */
+
+.icons:hover {
+    color: #4492fa;
+}
+
+.bg-primary {
+    background-color: blue;
+}
+
+/* global css */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.left-side-header {
+    margin-left: 25px;
+}
+
+
+.scanner {
+    margin-left: 20px;
+    color: black;
+}
+
+.dashboard {
+    margin-left: 40px;
+color: black;
+}
+
+.header-wrapper {
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1px solid #ebebeb;
+    
+}
+
+.dropdown {
+    margin-left: 32px;
+}
+
+.dropdown .profile-wrap {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.profile-name{
+    color: black;
+}
+
+
+.sidebar {
+    width: 300px;
+    border-right: 1px solid #ebebeb ;
+    
+}
+
+#toggleSidebar {
+    display: none;
+}
+
+#toggleSidebar:checked+#sidebar {
+    width: 0px;
+    transform: translateX(-300px);
+}
+
+#sidebar {
+    transition: all 0.1s linear;
+}
+
+.sidebar ul{
+   text-align: left;
+   padding-left: 35px;
+}
+
+.side-top li {
+    list-style: none;
+    padding:10px 10px;
+    margin-bottom: 25px;
+    border-left: hsl(131deg 66% 40%);
+
+}
+
+.side-bottom {
+    /* padding:10px 10px; */
+    margin-bottom: 250px;
+}
+
+.side-bottom li {
+    list-style: none;
+    padding: 10px 10px;
+    margin-bottom: 25px;
+    border-left: hsl(131deg 66% 40%) ;
+}
+ ul li:hover{
+    background-color: hsl(132deg 63% 97%);
+}
+li .icons:hover{
+    color: hsl(133deg 51% 46%);
+}
+/* li .icons:hover{
+    background-color: hsl(131deg 72% 39%);
+} */
+
+.li-icons {
+    width: 40px;
+}
+.sidebar h2{
+    padding: 15px 35px;
+    text-align: left;
+}
+.main-wrapper{
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color:  hsl(0deg 0% 98%);
+    /* overflow: hidden; */
+    
+}
+.main-wrapper h1{
+    margin-left: 20px;
+}
+/* .top-main{
+    position: sticky;
+} */
+
+.button-size {
+    height: 40px;
+    width: 100px;
+    background-color: hsl(131deg 78% 39%);
+    margin: 20px 0px;
+}
+#search-box{
+    height: 40px;
+    width: 300px;
+    margin-right: 0px;
+}
+
+
+table {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-spacing: 0px 5px;
+} 
+ 
+  th,
+  td {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+  }
+  th{
+    text-align: left;
+    background-color:hsl(0deg 0% 100%) ;
+  }
+  td {
+    background-color: hsl(0deg 0% 100%);
+    text-align: left;
+}
+  /* .table-wrapper{
+    margin-top: 10px;
+  } */
+  .d-none{
+    display: none;
+  }
+  .no-records {
+    /* display: flex;
+   justify-content: center; */
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+/* media query for responsiveness */
+
+/* media queries for extra-large devices */
+@media only screen and (max-width: 1700px) {
+   
+    body {
+      background-color: white;
+    }
+
+}
+
+/* media queries for large devices */
+
+@media only screen and (max-width: 1200px) {
+    
+
+    body {
+      background-color: black;
+    }
+
+}
+
+/* media queries for medium devices */
+
+@media only screen and (max-width: 950px) {
+    
+
+    body {
+      background-color: red;
+    }
+}
+
+
+/* media queries for small devices */
+
+@media only screen and (max-width: 600px) {
+    
+
+    body {
+      background-color: yellow;
+    }
+    .sidebar-wrapper {
+        position: relative;
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 100;
+        background-color: white;
+    }
+    table{
+        overflow: auto;
+    }
+}
