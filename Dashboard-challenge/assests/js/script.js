@@ -98,7 +98,26 @@ function getData(data) {
             // console.log(tablecol);
             const value = user[item];
             // console.log(value);
+           
+              if (user[item] == "Discarded") {
+               addcolor.classList.add("bg-red")
+            }
+            if (user[item] == "Want") {
+               addcolor.classList.add("bg-green")
+            }
+            if (user[item] == "Waiting") {
+               addcolor.classList.add("bg-yellow")
+            }
+            if (user[item] == "Cancelled") {
+               addcolor.classList.add("bg-white")
+            }
+
+            tablecol.appendChild(addcolor);
+         }
+         else {
             tablecol.textContent = value;
+         }
+  
             tableRow.appendChild(tablecol)
         }
         userTableBody.appendChild(tableRow);
@@ -121,7 +140,6 @@ function filterUser() {
       filteredData = user;
     }
   
-    
     if (!filteredData.length) {
       userTableBody.classList.add(['d-none']);
       noRecordDiv.classList.remove(['d-none']);
