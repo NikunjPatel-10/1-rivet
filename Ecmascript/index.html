@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecmascript</title>
+</head>
+
+<body>
+    <script>
+        // let, var and const difference
+        // console.log(abc);
+        // var abc = 'data';
+        // console.log(xyz)
+        // let xyz = 'data1'
+        // console.log(somedata)
+        // const somedata = 'data2'
+
+        // using function
+        // data();
+        // function data() {
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(c);
+
+        //     var a = 'some';
+        //     let b = 'some1';
+        //     const c = 'some2';
+        // }
+
+        // scope chaining
+        // function a() {
+        //     var b = 10;
+        //     c();
+        //     function c(){
+        //         console.log(b)
+        //     }
+
+        // }
+
+        // a();
+
+        var scope = 'i am global scope'
+        somescope();
+        function somescope() {
+            console.log(1, scope)
+            var scope = 'i am local scope'
+            console.log(2, scope)
+        }
+        console.log(3, scope);
+
+
+        // template literals
+        // single line
+        let text = `Hello world!`;
+        console.log(text);
+
+        // multiline string 
+        let greeting = `hello,
+                      very good,
+                       morning,`;
+        console.log(greeting);
+
+        // template using string interpolation
+        let firstName = "Nikunj";
+        let lastName = "Patel";
+
+        console.log(`welcome to ${firstName} ${lastName}`)
+
+        // parameter handling
+
+        let findarea = (height = 50, width = 100) => {
+            console.log(height);
+            console.log(width);
+        }
+        findarea(200);
+        findarea(300, 50)
+
+        // rest parameters
+        function sum(...theArgs) {
+            console.log(theArgs);
+        }
+        console.log(sum(5, 6, 7, 8, 9));
+        console.log(sum(10, 11, 12));
+
+        // example -2
+        function myFun(a, b, ...manyMoreArgs) {
+            console.log("a", a);
+            console.log("b", b);
+            console.log("manyMoreArgs", manyMoreArgs);
+        }
+
+        myFun("one", "two", "three", "four", "five", "six");
+
+        //  Named parameters via destructuring
+        // using object
+        function doSomthing({ a = 'info', b, c = false }) {
+            console.log(a, b, c);
+        }
+        doSomthing({ a: 'test', b: 1, c: true });
+        doSomthing({ b: 2, c: true });
+
+        // using array
+        function nikunj([a, b, c]) {
+            console.log(a, b, c);
+        }
+        nikunj([1, 2, 3]);
+        nikunj([2, 4, 5]);
+
+        //  Spread operator
+        function sum(a, b, c) {
+            return a + b + c;
+        }
+
+        const numbers = [10, 20, 3];
+        console.log(sum(...numbers));
+
+        //  Destructuring 
+        // ES5 version
+        var fruitsList = ["Apple", "Banana"];
+        var p = fruitsList[0];
+        var q = fruitsList[1];
+        //  Array Destructuring
+        let fruits = ["nikunj", "patel"];
+        let [a, b] = fruits;  // Array destructuring assignment
+        console.log('a value: ', a);
+        console.log('b value: ', b);
+
+        // Object Destructuring
+        let person = { name: "nikunj", age: 25 };
+        let { name, age } = person; // Object destructuring assignment
+        console.log('Person name: ', name);
+        console.log('Person age: ', age);
+
+        // string method
+
+        let mno = 'hello';
+        'hello'.startsWith('hell');
+        console.log('hello'.startsWith('hell'))
+        'hello'.endsWith('ello');
+        console.log('hello'.endsWith('lllo'))
+        'hello'.includes('ell');
+        console.log( 'hello'.includes('ell'));
+        'doo '.repeat(3);
+
+        
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
