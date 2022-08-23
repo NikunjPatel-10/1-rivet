@@ -237,6 +237,31 @@ table {
     background-color: hsl(0deg 0% 100%);
     text-align: left;
 }
+
+.badge {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.bg-red {
+    background-color: hsl(3deg 100% 96%);
+    color: hsl(358deg 63% 68%);
+}
+
+.bg-green {
+    background-color: hsl(134deg 87% 97%);
+    color: hsl(133deg 53% 41%);
+}
+
+.bg-yellow {
+    background-color: hsl(42deg 100% 95%);
+    color: hsl(30deg 77% 57%);
+}
+.bg-white{
+    background-color: hsl(0deg 5% 96%);
+    color:hsl(232deg 60% 5%);
+}
+
   /* .table-wrapper{
     margin-top: 10px;
   } */
