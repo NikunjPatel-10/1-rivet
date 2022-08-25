@@ -1,0 +1,59 @@
+/* media query for responsiveness */
+
+/* media queries for extra-large devices */
+@media only screen and (max-width: 1700px) {
+
+    body {
+        background-color: white;
+    }
+
+}
+
+/* media queries for large devices */
+
+@media only screen and (max-width: 1200px) {
+
+
+    body {
+        background-color: black;
+    }
+
+}
+
+/* media queries for medium devices */
+
+@media only screen and (max-width: 950px) {
+
+
+    body {
+        background-color: red;
+    }
+}
+
+
+/* media queries for small devices */
+
+@media only screen and (max-width: 600px) {
+
+
+    body {
+        background-color: yellow;
+    }
+
+    .sidebar-wrapper {
+        position: relative;
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 100;
+        background-color: white;
+    }
+
+    table {
+        overflow: auto;
+    }
+}

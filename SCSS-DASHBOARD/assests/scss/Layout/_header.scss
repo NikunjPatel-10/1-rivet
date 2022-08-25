@@ -1,0 +1,36 @@
+.header-wrapper {
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1px solid $border-color;
+    .left-side-header {
+        margin-left: 25px;
+    }
+    .scanner {
+        margin-left: 20px;
+        color: black;
+    }
+    
+    .dashboard {
+        margin-left: 40px;
+        color: black;
+    }
+    .dropdown {
+        margin-left: 32px;
+
+        .profile-wrap{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 20px;
+        overflow: hidden;
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+        }
+    }
+     .profile-name {
+    color: black;
+      }
+
+}

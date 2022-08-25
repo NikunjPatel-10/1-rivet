@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "scss": "^0.2.4"
+  },
+  "scripts": {
+    "build": "sass assests/scss/styles.scss  assests/css/styles.css --watch"
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assests/css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header section start -->
+        <header class=" header-wrapper d-flex justify-between ">
+            <div class="d-flex left-side-header">
+                <div class=" d-flex menubar">
+                    <label for="toggleSidebar"><span class="fa-solid fa-bars icons cursor-pointer"></span></label>
+                </div>
+
+                <div class="icons scanner ">TallyScan</div>
+                <div class="icons dashboard">Dashboard</div>
+            </div>
+            <div class="d-flex">
+                <div><a href="" class="message"><span class="fa-solid fa-bell icons"></span></a></div>
+                <div class="d-flex">
+                    <a href="" class="dropdown d-flex align-items-center">
+                        <div class="profile-wrap">
+                            <img src="assests/Images/profile-pic.jpg" alt="profile.pic">
+                        </div>
+                    </a>
+                    <div class="icons profile-name">Jhon smith</div>
+                    <span class="fa-solid fa-caret-down icons "></span>
+                </div>
+
+            </div>
+        </header>
+        <!-- header section end -->
+        <section class="d-flex h-100 w-100 sidebar-wrapper overflow-hidden">
+            <!-- sidebar section start -->
+            <input type="checkbox" id="toggleSidebar" />
+            <sidebar id="sidebar" class="sidebar d-flex flex-column justify-between h-100 ">
+
+                <div class="side-top w-100 ">
+                    <h2>GENERAL</h2>
+                    <ul class="w-100">
+                        <li class="">
+                            <a href=""><span class="fa-solid fa-magnifying-glass icons li-icons "></span></a><span
+                                class="icons">Search</span>
+                        </li>
+                        <li class="">
+                            <a href=""><span class="fa-solid fa-bell  icons li-icons"></span></a><span
+                                class="icons">Alerts</span>
+                        </li>
+                        <li class="">
+                            <a href=""> <span class="fa-solid fa-tag icons li-icons"></span></a><span
+                                class="icons">Tags</span>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="side-bottom ">
+                    <h2>OTHERS</h2>
+                    <ul class="w-100">
+
+                        <li> <a href=""><span class="fa-solid fa-gear icons li-icons"></span></a><span
+                                class="icons">Settings</span>
+                        </li>
+
+                        <li> <a href=""><span class="fa-solid fa-sun icons li-icons"></span></a><span
+                                class="icons">Tips</span>
+                        </li>
+                        <li> <a href=""><span class="fa-solid fa-trash-can icons li-icons"></span></a><span
+                                class="icons">Trash</span>
+                        </li>
+                        <li> <a href=""><span class="fa-solid fa-arrow-right-to-bracket icons li-icons"></span></a><span
+                                class="icons">Logout</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </sidebar>
+            <!-- sidebar section end -->
+            <!-- main section start -->
+            <main class=" main-wrapper h-100 w-100 overflow-auto">
+                <div class="d-flex justify-between top-main">
+                    <div></div>
+                    <div>
+                        <input type="text" placeholder="Search here" id="search-box" onkeyup="filterUser()">
+                        <button class="button-size" onclick="filterUser()"><span
+                                class="fa-solid fa-filter"></span><span>Filter</span></button>
+                    </div>
+                </div>
+                <!-- card section start -->
+
+                <!-- card section end -->
+                <h1>Recent activity</h1>
+                <!-- table start -->
+                <div class="table-wrapper h-100 w-100 ">
+                    <table id="user-table">
+                        <thead>
+                            <th>Item</th>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>EstCost</th>
+                            <th>Last</th>
+                            <th>List</th>
+                            <th>Auto</th>
+                            <th>Buynow</th>
+                        </thead>
+                        <tbody id="user-table-body">
+
+                        </tbody>
+                    </table>
+                    <div class="no-records d-none">No records found</div>
+                </div>
+                <!-- table end -->
+
+            </main>
+            <!-- main section end -->
+        </section>
+    </div>
+</body>
+<script src="assests/js/script.js"></script>
+
+</html>
