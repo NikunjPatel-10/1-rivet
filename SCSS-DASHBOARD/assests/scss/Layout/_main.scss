@@ -5,6 +5,7 @@
     /* overflow: hidden; */
 
     .button-size {
+        cursor: pointer;
         height: 40px;
         width: 100px;
         background-color: hsl(131deg 78% 39%);
@@ -19,6 +20,7 @@
 
     h1 {
         margin-left: 20px;
+        cursor: pointer;
     }
 
     // table section start
@@ -30,6 +32,7 @@
 
         th,
         td {
+            cursor: pointer;
             margin: 20px;
             padding: 20px;
             text-align: center;

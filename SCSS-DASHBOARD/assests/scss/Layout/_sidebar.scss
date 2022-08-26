@@ -11,15 +11,13 @@
 
 // sidebar section started
 
-
-
 .sidebar {
     width: 300px;
     border-right: 1px solid $border-color;
     transition: all 0.5s linear;
 
     ul {
-        text-align: left;
+        text-align: $text;
         padding-left: 35px;
 
         li:hover {
@@ -29,7 +27,7 @@
     }
     .side-top li {
        @include li-icon-style();
-        border-left: hsl(131deg 66% 40%);
+        
 
         .li-icons {
             width: 40px;
@@ -47,8 +45,7 @@
 
         li {
            @include li-icon-style();
-            border-left: hsl(131deg 66% 40%);
-
+           
             .li-icons {
                 width: 40px;
             }
@@ -61,7 +58,7 @@
 
     h2 {
         padding: 15px 35px;
-        text-align: left;
+        text-align: $text;
     }
 
 }

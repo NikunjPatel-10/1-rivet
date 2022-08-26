@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
 }
 
+/* global css */
 .overflow-hidden {
   overflow: hidden;
 }
@@ -76,7 +77,6 @@ body {
   background-color: blue;
 }
 
-/* global css */
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -178,6 +178,7 @@ body {
   /* overflow: hidden; */
 }
 .main-wrapper .button-size {
+  cursor: pointer;
   height: 40px;
   width: 100px;
   background-color: hsl(131deg, 78%, 39%);
@@ -190,6 +191,7 @@ body {
 }
 .main-wrapper h1 {
   margin-left: 20px;
+  cursor: pointer;
 }
 .main-wrapper table {
   width: 100%;
@@ -199,6 +201,7 @@ body {
 }
 .main-wrapper table th,
 .main-wrapper table td {
+  cursor: pointer;
   margin: 20px;
   padding: 20px;
   text-align: center;

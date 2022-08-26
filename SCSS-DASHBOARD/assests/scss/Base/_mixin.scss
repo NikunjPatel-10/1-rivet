@@ -1,5 +1,6 @@
 @mixin li-icon-style() {
-    list-style: none;
+        list-style: none;
         padding: 10px 10px;
         margin-bottom: 25px;
+        border-left: hsl(131deg 66% 40%);
 }

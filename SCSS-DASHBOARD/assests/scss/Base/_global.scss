@@ -9,11 +9,13 @@ html,
 body {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: $overflow;
 }
 
+/* global css */
+
 .overflow-hidden {
-    overflow: hidden;
+    overflow: $overflow;
 }
 
 .overflow-auto {
@@ -81,10 +83,10 @@ body {
 // }
 
 .bg-primary {
-    background-color: blue;
+    background-color:$primary-color;
 }
 
-/* global css */
+
 .wrapper {
     display: flex;
     flex-direction: column;
