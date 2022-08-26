@@ -54,6 +54,11 @@ body {
   color: grey;
 }
 
+.ul-icons {
+  font-size: 20px;
+  color: grey;
+}
+
 .h-100 {
   height: 100%;
 }
@@ -147,7 +152,7 @@ body {
 .sidebar .side-top li .li-icons {
   width: 40px;
 }
-.sidebar .side-top li .icons:hover {
+.sidebar .side-top li .ul-icons:hover {
   color: hsl(133deg, 51%, 46%);
 }
 .sidebar .side-bottom {
@@ -163,7 +168,7 @@ body {
 .sidebar .side-bottom li .li-icons {
   width: 40px;
 }
-.sidebar .side-bottom li .icons:hover {
+.sidebar .side-bottom li .ul-icons:hover {
   color: hsl(133deg, 51%, 46%);
 }
 .sidebar h2 {
@@ -205,7 +210,7 @@ body {
   margin: 20px;
   padding: 20px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   text-align: left;
   background-color: hsl(0deg, 0%, 100%);
 }
