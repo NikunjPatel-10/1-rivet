@@ -1,0 +1,71 @@
+
+.topbar {
+  height: 60px;
+  flex-shrink: 0;
+  padding: 0 30px;
+
+
+  /* Search */
+
+  .search-wrapper {
+    .icon {
+      color: #000000;
+    }
+
+    .search {
+      border: 0;
+      padding: 10px 15px;
+      font-weight: 500;
+
+      :focus-visible {
+        outline: none;
+      }
+
+      ::placeholder {
+        color: #000000;
+      }
+    }
+
+  }
+
+
+
+
+
+
+
+/* Notification */
+
+
+.action-item {
+  margin-left: 10px;
+
+  .notification {
+    color: #6a6a6a;
+    padding: 10px;
+  }
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+
+  .user-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #f77ed8;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .icon {
+    font-size: 14px;
+    color: #7f7f7f;
+  }
+}
+
+}

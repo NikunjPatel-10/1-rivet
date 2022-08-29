@@ -1,0 +1,20 @@
+.page-wrapper{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.main-content{
+    flex-grow: 1;
+    overflow: hidden;
+  
+}
+
+.main-wrapper {
+    height: 100%;
+    flex-grow: 1;
+    overflow: auto;
+    background-color: #fafafa;
+    // margin-left:20px;
+    // margin-right:20px ;
+  }
