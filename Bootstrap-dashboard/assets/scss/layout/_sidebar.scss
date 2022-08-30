@@ -1,0 +1,25 @@
+.sidebar-wrapper {
+    width: 200px;
+
+    .nav {
+        &-item {
+            border-radius: $border-radius;
+
+            &:hover {
+                background-color: $nav-bg-color;
+            }
+        
+
+        .nav-link {
+            color: grey;
+
+            &.active {
+                color: $nav-color;
+                background-color: $nav-bg-color;
+                border-radius: $border-radius;
+            }
+        }
+    }
+
+    }
+}

@@ -1,0 +1,12 @@
+// for base file
+
+@import "base/index";
+
+// for bootstrap file
+
+@import "vendors/bootstrap-base";
+@import "vendors/bootstrap-icon";
+@import "vendors/bootstrap-component";
+
+// for layout file
+ @import "layout/index.scss";
