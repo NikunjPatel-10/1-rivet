@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="d-flex h-100">
+        <!-- Aside -->
+        <aside class="primary-aside d-flex flex-column border border-primary">
+
+            <!-- brand logo -->
+            <figure class="d-flex align-items-center justify-content-center py-3 px-4">
+                <span class="bi bi-stars text-primary pe-3"></span>
+                <h6 class="mb-0 d-flex">
+                    <span class="text-primary">Star</span>
+                    <span>Mall</span>
+                </h6>
+                <!-- <img src="assets/images/brand-logo.png" class="img-fluid" alt=""> -->
+            </figure>
+            <!-- End: brand logo -->
+
+            <!-- Nav list -->
+            <ul class="nav flex-column flex-nowrap flex-grow-1 overflow-auto">
+                <li class="nav-item">
+                    <a class="nav-link d-flex d-lg-block active" href="#">
+                        <span class="nav-icon bi bi-bricks pe-3"></span>
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="nav-icon bi bi-bricks pe-3"></span>
+                        <span class="nav-text">Stuff</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="nav-icon bi bi-bricks pe-3"></span>
+                        <span class="nav-text">Shops</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="nav-icon bi bi-bricks pe-3"></span>
+                        <span class="nav-text">Branches</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="nav-icon bi bi-bricks pe-3"></span>
+                        <span class="nav-text">Events</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- End: Nav list -->
+
+            <!-- Nav list -->
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="nav-icon bi bi-bricks pe-3"></span>
+                        <span class="nav-text">Settings</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="nav-icon bi bi-bricks pe-3"></span>
+                        <span class="nav-text">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- End: Nav list -->
+        </aside>
+        <!-- End: Aside -->
+        <section class="wrapper flex-grow-1 rounded-start d-flex flex-column">
+            <header class="border border-success py-3 px-4 d-flex justify-content-between overflow-hidden">
+                <div class="flex-grow-1">
+                    <nav class="navbar bg-light">
+                        <div class="container-fluid">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search brand,staff etc" aria-label="Search">
+
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+                <div class="d-flex">
+                    <div class="border border-1 rounded-circle mx-3 p-2">
+                        <a class="">
+                            <span class="bi bi-envelope position-relative mx-1 ">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="border border-1 rounded-circle mx-3 p-2">
+                        <span class="bi bi-envelope mx-1 "></span>
+                    </div>
+                    <div  class="border border-1 rounded-circle mx-3 p-2">
+                        <a class="">
+                            <span class="bi bi-bell position-relative mx-1 ">
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="border border-1 rounded-circle mx-3 p-2">
+                        <span class="bi bi-calculator mx-1  "></span>
+                    </div>
+                </div>
+            </header>
+            <!-- main content  -->
+            <main class="flex-grow-1 d-flex border overflow-auto">
+                <!-- left content -->
+                <div class="flex-grow-1 p-3 p-lg-4">
+                    <div class="row g-4">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card border bg-secondary">
+                                <div class="card-body d-flex">
+                                    <div class=" me-4 top-brands p-3 rounded">
+                                        <span class="bi bi-bag-fill text-primary"></span>
+                                    </div>
+                                    <div>
+                                        <h5 class="card-title">Top brands</h5>
+                                        <p class="card-text text-info">18 Brands</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6  col-lg-4">
+                            <div class="card border bg-secondary">
+                                <div class="card-body d-flex">
+                                    <div class=" me-4 top-staff p-3 rounded">
+                                        <span class="bi bi-people-fill text-success"></span>
+                                    </div>
+                                    <div>
+                                        <h5 class="card-title">Top staff</h5>
+                                        <p class="card-text">9 people</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12  col-lg-4">
+                            <div class="card border bg-secondary">
+                                <div class="card-body d-flex">
+                                    <div class=" me-4  best-sellers p-3 rounded">
+                                        <span class="bi bi-handbag-fill text-info "></span>
+                                    </div>
+                                    <div>
+                                        <h5 class="card-title">Best sellers</h5>
+                                        <p class="card-text">11 products</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 section row  -->
+                    <div class="row my-4 mx-0 ">
+                        <div class="col-6 bg-secondary  rounded bg-secondary">
+                            <div class="">
+                                <div class="d-flex justify-content-between">
+                                    <div class="m-4">Staff salary</div>
+                                    <div class="m-4 pe-4">Show all</div>
+                                </div>
+                                <hr>
+                                <div class=" ">
+                                    <table class="w-100">
+
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex ">
+                                                        <div class="product-img-wrap border rounded-circle me-3 ">
+                                                            <img src="assets/images/profile.jpg" alt="profile.pic">
+                                                        </div>
+                                                        <div>
+                                                            <div>Afshin T2Y</div>
+                                                            <div>$5500</div>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="text-align-end"><a href=""><button
+                                                                class="border border-primary btn rounded-pill px-5 py-2 col align-self-end">Play</button></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex ">
+                                                        <div class="product-img-wrap border rounded-circle me-3 ">
+                                                            <img src="assets/images/profile.jpg" alt="profile.pic">
+                                                        </div>
+                                                        <div>
+                                                            <div>Afshin T2Y</div>
+                                                            <div>$5500</div>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="text-align-end"><a href=""><button
+                                                                class="border border-primary btn rounded-pill px-5 py-2 col align-self-end">Play</button></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex ">
+                                                        <div class="product-img-wrap border rounded-circle me-3">
+                                                            <img src="assets/images/profile.jpg" alt="profile.pic">
+                                                        </div>
+                                                        <div>
+                                                            <div>Afshin T2Y</div>
+                                                            <div>$5500</div>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                                <td>
+                                                    <div class="text-align-end"><a href=""><button
+                                                                class="border border-primary btn rounded-pill px-5 py-2 ">Play</button></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <!-- table end -- -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex flex-column ">
+
+                            <div
+                                class="d-flex   rounded   bg-secondary justify-content-between p-lg-4 m-2 bg-secondary  rounded  col-sm-12 ">
+                                <div class="d-flex">
+                                    <div class="product-img-wrap border rounded-circle me-5">
+                                        <img src="assets/images/profile.jpg" alt="profile.pic">
+                                    </div>
+                                    <div><span class="text-white">Upcoming </span><br>Discount Party</div>
+                                </div>
+                                <div class="text-primary">Deatils<span class="bi bi-arrow-right-circle ms-2"></span>
+                                </div>
+                            </div>
+                            <div class="p-3  rounded  m-2 mt-3  bg-secondary  rounded flex-grow-1 bg-secondary col-sm-12 ">
+                                <div class="d-flex justify-content-between">
+                                    <div>Contact status</div>
+                                    <div><span class="bi bi-arrow-left me-2"></span><span
+                                            class="bi bi-arrow-right"></span></div>
+                                </div>
+                                <hr>
+                                <div class="d-flex   rounded    justify-content-between px-2 py-5 ">
+                                    <div class="d-flex">
+                                        <div class="product-img-wrap border rounded-circle me-5">
+                                            <img src="assets/images/profile.jpg" alt="profile.pic">
+                                        </div>
+                                        <div><span class="text-white">Upcoming </span><br>Discount Party</div>
+                                    </div>
+                                    <div class=""><a href=""><button
+                                                class="border border-primary btn rounded-pill px-5 py-2">Inform</button></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12  mt-3 ">
+
+                            <img src="assets/images/graph.jpg" class="w-100 img-fluid" alt="..." >
+
+                        </div>
+                    </div>
+
+                    <!-- End: 2 section row  -->
+
+                </div>
+                <!-- End: left content -->
+
+                <!-- Secondary Aside -->
+                <aside class="footer-aside d-flex flex-column bg-secondary rounded  p-2 m-3 h-100 ">
+
+
+                    <div class="d-flex justify-content-between p-3">
+                        <p class="text-primary ms-3">TopBrands</p>
+                        <span class="bi bi-x-circle"></span>
+                    </div><hr>
+
+
+                    <!-- Nav list -->
+                  
+                    <ul class="nav flex-column flex-nowrap flex-grow-1 ">
+                        <li class="nav-item border border-light rounded-pill ">
+                            <a class="nav-link d-flex d-lg-block " href="#">
+                                <span class="me-3">1</span><span class="me-3">|</span>
+                                <span class="nav-icon bi bi-apple pe-3 text-white"></span>
+                                <span class="nav-text text-white">apple</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border border-light rounded-pill">
+                            <a class="nav-link d-flex d-lg-block " href="#">
+                                <span class="me-3">1</span><span class="me-3">|</span>
+                                <span class="nav-icon bi bi-apple pe-3 text-white"></span>
+                                <span class="nav-text text-white">apple</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border border-light rounded-pill">
+                            <a class="nav-link d-flex d-lg-block " href="#">
+                                <span class="me-3">1</span><span class="me-3">|</span>
+                                <span class="nav-icon bi bi-apple pe-3 text-white"></span>
+                                <span class="nav-text text-white">apple</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border border-light rounded-pill">
+                            <a class="nav-link d-flex d-lg-block " href="#">
+                                <span class="me-3">1</span><span class="me-3">|</span>
+                                <span class="nav-icon bi bi-apple pe-3 text-white"></span>
+                                <span class="nav-text text-white">apple</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border border-light rounded-pill">
+                            <a class="nav-link d-flex d-lg-block " href="#">
+                                <span class="me-3">1</span><span class="me-3">|</span>
+                                <span class="nav-icon bi bi-apple pe-3 text-white"></span>
+                                <span class="nav-text text-white">apple</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border border-light rounded-pill">
+                            <a class="nav-link d-flex d-lg-block " href="#">
+                                <span class="me-3">1</span><span class="me-3">|</span>
+                                <span class="nav-icon bi bi-apple pe-3 text-white"></span>
+                                <span class="nav-text text-white">apple</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border border-light rounded-pill">
+                            <a class="nav-link d-flex d-lg-block " href="#">
+                                <span class="me-3">1</span><span class="me-3">|</span>
+                                <span class="nav-icon bi bi-apple pe-3 text-white"></span>
+                                <span class="nav-text text-white">apple</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border border-light rounded-pill">
+                            <a class="nav-link d-flex d-lg-block " href="#">
+                                <span class="me-3">1</span><span class="me-3">|</span>
+                                <span class="nav-icon bi bi-apple pe-3 text-white"></span>
+                                <span class="nav-text text-white">apple</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border border-light rounded-pill">
+                            <a class="nav-link d-flex d-lg-block " href="#">
+                                <span class="me-3">1</span><span class="me-3">|</span>
+                                <span class="nav-icon bi bi-apple pe-3 text-white"></span>
+                                <span class="nav-text text-white">apple</span>
+                            </a>
+                        </li>
+                        <li class="nav-item border border-light rounded-pill">
+                            <a class="nav-link d-flex d-lg-block " href="#">
+                                <span class="me-3">1</span><span class="me-3">|</span>
+                                <span class="nav-icon bi bi-apple pe-3 text-white"></span>
+                                <span class="nav-text text-white">apple</span>
+                            </a>
+                        </li>
+                       
+                    </ul>
+             
+             
+
+
+                    <!-- End: Nav list -->
+                </aside>
+                <!--End: Secondary Aside -->
+            </main>
+            <!-- End: main content  -->
+        </section>
+    </div>
+</body>
+
+</html>

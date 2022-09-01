@@ -1,0 +1,28 @@
+// Footer sty// Styles for Sidebar lies here
+.footer-aside {
+    flex     : 0 0 250px;
+    max-width: 250px;
+
+    @include media-breakpoint-down(sm) {
+        flex     : 0 0 80px;
+        max-width: 80px;
+    }
+
+    .nav {
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+            .nav-link {
+                border-radius: $nav-link-border-radius;
+                // background-color:$wrapper-bg ;
+                // &.active,
+                // &:hover {
+                //     background-color: rgba($nav-link-active-bg, 0.15);
+                //     color           : $nav-link-active-color;
+                // }
+            }
+        }
+    }
+}
