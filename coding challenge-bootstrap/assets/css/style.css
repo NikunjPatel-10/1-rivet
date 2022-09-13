@@ -67,7 +67,7 @@ a {
 }
 
 .main-bg-color {
-  background-color: #ecf5f4;
+  background-color: #f8f9fb;
 }
 
 .button-bg-color {
@@ -75,7 +75,7 @@ a {
 }
 
 .text-color {
-  color: #29a595;
+  color: #2c4761;
 }
 
 .align-center {
@@ -7517,6 +7517,9 @@ textarea.form-control-lg {
   overflow: hidden;
 }
 
+.main-wrapper {
+  background-color: #f8f9fb;
+}
 .main-wrapper td {
   margin: 10px;
   padding: 10px;
@@ -7538,10 +7541,10 @@ textarea.form-control-lg {
 .primary-aside .triangle-element {
   width: 20px;
   height: 20px;
-  background: linear-gradient(to bottom right, #fff 0%, #fff 50%, green 50%, green 100%);
+  background: linear-gradient(to bottom right, #fff 0%, #f8f9fb 50%, #29a595 50%, #29a595 100%);
 }
 .primary-aside .nav-item .nav-link.active, .primary-aside .nav-item .nav-link:hover {
-  background-color: #ecf5f4;
+  background-color: #f8f9fb;
   color: #29a595;
 }
 
